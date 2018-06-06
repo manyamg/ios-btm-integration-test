@@ -17,7 +17,7 @@ public class Hooks {
 
     @After
     public void printTestStatus(Scenario scenario) {
-        LOGGER.info("test scenario execution is is completed: " + scenario.getName());
+        LOGGER.info("test scenario execution is completed: " + scenario.getName());
     }
 
 
