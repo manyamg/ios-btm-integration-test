@@ -1,0 +1,6 @@
+environment: qa
+services:
+  btm:
+    baseUrl: http://qa.ios.smartenergyislands.cloud
+    endpoints:
+      status: /dcs/status

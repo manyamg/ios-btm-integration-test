@@ -1,0 +1,86 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 239103234,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.printEnvironment()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "status check request",
+        "description": "",
+        "id": "verify-the-application-healthcheck-status;status-check-request",
+        "after": [
+          {
+            "result": {
+              "duration": 124935,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.printTestStatus(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132284829,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the application status endpoint",
+            "match": {
+              "location": "CommonStepDefs.theApplicationStatusEndpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1453879870,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the status request is sent",
+            "match": {
+              "location": "CommonStepDefs.theStatusRequestIsSent()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58598432,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "an HTTP 200 response is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "CommonStepDefs.anHTTPResponseIsReturned(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify the application healthcheck status",
+    "description": "",
+    "id": "verify-the-application-healthcheck-status",
+    "keyword": "Feature",
+    "uri": "com/hitachi/btm/features/status_check.feature"
+  }
+]
